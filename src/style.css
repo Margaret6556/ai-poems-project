@@ -10,6 +10,7 @@ body {
   background-color: #abc5ba;
   border-radius: 50px;
   padding: 80px 80px;
+  opacity: 0.9;
 }
 
 header {
