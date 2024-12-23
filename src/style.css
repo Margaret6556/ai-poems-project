@@ -1,11 +1,11 @@
 body {
-  background-image: url("/assets/cucumber.jpg");
+  background-image: url("/assets/lemon.jpg");
   background-image: cover;
   opacity: 0.8;
 }
 
 .container {
-  margin: 80px auto;
+  margin: 60px auto;
   width: 800px;
   background-color: #abc5ba;
   border-radius: 50px;
