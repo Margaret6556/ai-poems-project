@@ -1,7 +1,7 @@
 body {
   background-image: url("/assets/lemon.jpg");
-  background-image: cover;
-  opacity: 0.8;
+  background-size: cover;
+  opacity: 0.9;
 }
 
 .container {
