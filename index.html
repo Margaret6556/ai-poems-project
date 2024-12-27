@@ -17,8 +17,9 @@
     ></script>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
 
     <title>AI French Poem Generator</title>
   </head>
@@ -29,10 +30,9 @@
       </header>
 
       <main>
-        <form class="poem-wrapper">
+        <form class="poem-wrapper" id="poem-generator-form">
           <input
             type="text"
-            id="poem-generator-form"
             placeholder="Enter a topic of the French poem"
             autofocus
             autocomplete="off"
@@ -47,7 +47,7 @@
           Hint: Cheese, Flower or Paris
         </div>
 
-        <div class="poem">
+        <div class="poem" id="typewriter">
           <p>
             La courbe de tes yeux fait le tour de mon cœur, Un rond de danse et
             de douceur, Auréole du temps, berceau nocturne et sûr, Et si je ne

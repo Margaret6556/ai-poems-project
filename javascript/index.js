@@ -17,12 +17,11 @@ function generatePoem(event) {
     "You are a romantic poem expert. Who loves to create French poem.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  axios.get(apiUrl).then(displayPoem);
+  axios.get(apiURL).then(displayPoem);
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${prompt}`);
-
-  let poemFormElement = document.querySelector("poem-generator-form");
-  poemFormElement.addEventListener("submit", generatePoem);
 }
+let poemFormElement = document.querySelector("#poem-generator-form");
+poemFormElement.addEventListener("submit", generatePoem);
