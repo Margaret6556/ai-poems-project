@@ -7,17 +7,13 @@ a {
   color: #392d28;
 }
 
-.image {
-  opacity: 0.8;
-}
-
 .container {
   margin: 60px auto;
   width: 800px;
   background-color: #abc5ba;
   border-radius: 50px;
   padding: 80px 80px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 header {
@@ -66,20 +62,38 @@ form {
   background-color: white;
   padding: 20px;
   line-height: 24px;
-  border-left: #36080a;
+  border-left: #ce9d88;
   border-radius: 10px;
   box-shadow: 6px 6px 5px 0px rgba(168, 168, 168, 1);
+  display: none;
 }
 
-.hint {
-  margin: 8px auto;
-  font-size: 14px;
-  font-style: italic;
-  margin-left: 14px;
+.poem strong {
+  color: #ce9d88;
+}
+
+.hint hidden {
+  margin-top: 5px 10px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
   margin-top: 30px;
   font-size: 14px;
   text-align: center;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
