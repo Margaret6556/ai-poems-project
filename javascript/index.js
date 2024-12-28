@@ -17,9 +17,9 @@ function generatePoem(event) {
     "You are a romantic poem expert. Who loves to create French poem.";
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  let poemElement = document.querySelector("#poem");
+  let poemElement = document.querySelector("#typewriter");
   poemElement.classList.remove("hidden");
-  poemElement.innerHTML = `<div class="generating">Generating a French poem ${instructionsInputValue}</div>`;
+  poemElement.innerHTML = `<div class="generating">Generating a French poem ${instructionsInput.value}</div>`;
 
   console.log("Generating poem");
   console.log(`Prompt: ${prompt}`);
